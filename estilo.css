@@ -1,0 +1,132 @@
+#logos{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+}
+.logofinal{
+    max-width: 100%;
+    
+}
+.logito{
+    border-radius: 80px;
+}
+.card{
+    width: 18rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+    
+}
+
+
+
+#desplegar{
+    display: none;
+}
+.parrafocentrado{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#medio{
+    max-width: 100%;
+    
+}
+#cuerpo{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px solid black;
+}
+#cartauno{
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+    
+}
+#cartados{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(156, 118, 14);
+}
+#cartatres{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 182, 26);
+}
+#cartacuatro{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 187, 0);
+    
+}
+
+.padre{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+.piepagina{
+    display: flex;
+    justify-content:space-around;
+    background-color: grey;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    #cuerpo{
+        border: 5px solid yellow;
+       
+    }
+}
+
+@media screen and (max-width:576px){
+    #cuerpo{
+        border: 10px solid blue;
+        
+    }
+    
+}
