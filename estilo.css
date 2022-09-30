@@ -1,89 +1,12 @@
-#logos{
+body{
+    background-color: rgb(184, 173, 164);
+}
+.encabezado{
+    display: flex;
+}
+#fotologo{
     width: 100%;
-    height: auto;
-    padding: 0%;
 }
-.logofinal{
-    max-width: 100%;
-    
-}
-.logito{
-    border-radius: 80px;
-}
-.card{
-    width: 18rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-    
-    
-}
-
-
-
-#desplegar{
-    display: none;
-}
-.parrafocentrado{
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#medio{
-    max-width: 100%;
-    
-}
-#cuerpo{
-    display: flex;
-    justify-content: center;
-    border-radius: 10px solid black;
-}
-#cartauno{
-    display: flex;
-    justify-content: center;
-    background-color: burlywood;
-    
-}
-#cartados{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(156, 118, 14);
-}
-#cartatres{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(218, 182, 26);
-}
-#cartacuatro{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 187, 0);
-    
-}
-
 .padre{
     display: flex;
     max-width: 100%;
@@ -91,23 +14,118 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top:50px ;
+    margin-bottom: 100px;
+    font-family: 'Inter', sans-serif;
 }
+
 
 .texto{
+    display: flex;
     justify-content: center;
     background-color: antiquewhite;
+    
 }
-
-
-
-
-
-
-.piepagina{
+#desplegar{
+    display: none;
+}
+.parrafocentrado{
     display: flex;
-    justify-content:space-around;
-    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    margin-left:100px ;
+    margin-right:100px ;
 }
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.logito{
+    border-radius: 80px;
+    
+}
+#pielogo{
+   text-align: center;
+}
+#instagram{
+    text-align: center;
+}
+#pietexto{
+    text-align: center;
+}
+#piepagina{
+    max-width: 100%;
+    background-color: #d3dde0;
+}
+
+
+
+
+
+
+#contactocuerpo{
+    max-width: 100%;
+    background-color: #d3dde0 ;
+    border: 1px solid black;
+    padding: 50px 25px 50px 25px;
+    font-family:'Inter', sans-serif ;
+
+}
+.contactoform{
+    justify-content: center;
+    text-align: justify;
+    font-family:'Inter', sans-serif ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,16 +135,10 @@
 
 @media screen and (max-width:768px){
 
-    #cuerpo{
-        border: 5px solid yellow;
-       
-    }
+   
 }
 
 @media screen and (max-width:576px){
-    #cuerpo{
-        border: 10px solid blue;
-        
-    }
-    
+   
+  
 }
