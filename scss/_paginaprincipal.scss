@@ -1,0 +1,34 @@
+.padre{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px ;
+    margin-bottom: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.texto{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+}
+
+.parrafocentrado{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left:100px ;
+    margin-right:100px ;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
