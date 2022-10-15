@@ -1,3 +1,7 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 .padre{
     display: flex;
     max-width: 100%;
@@ -8,24 +12,36 @@
     margin-top:50px ;
     margin-bottom: 100px;
     font-family: 'Inter', sans-serif;
+    background-color: aliceblue;
+    .texto{
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+        font-family: 'Inter', sans-serif;
+        
+    }
+    .parrafocentrado{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left:100px ;
+        margin-right:100px ;
+        font-family: 'Inter', sans-serif;
+    }
 }
 
-
-.texto{
+.migajas{
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
-    font-family: 'Inter', sans-serif;
+    background-color:antiquewhite ;
+    margin: 0%;
+}
+ol{
+    margin:0%;
+   
 }
 
-.parrafocentrado{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-left:100px ;
-    margin-right:100px ;
-    font-family: 'Inter', sans-serif;
-}
+
 
 
 .link{

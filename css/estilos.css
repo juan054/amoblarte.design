@@ -32,6 +32,11 @@ body {
   background-color: #d3dde0;
 }
 
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 .padre {
   display: flex;
   max-width: 100%;
@@ -42,22 +47,32 @@ body {
   margin-top: 50px;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
+  background-color: aliceblue;
 }
-
-.texto {
+.padre .texto {
   display: flex;
   justify-content: center;
   background-color: antiquewhite;
   font-family: "Inter", sans-serif;
 }
-
-.parrafocentrado {
+.padre .parrafocentrado {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
   font-family: "Inter", sans-serif;
+}
+
+.migajas {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin: 0%;
+}
+
+ol {
+  margin: 0%;
 }
 
 .link {
@@ -70,17 +85,17 @@ body {
   background-color: #d3dde0;
   border: 1px solid black;
   padding: 50px 25px 50px 25px;
+  margin: 0%;
   font-family: "Inter", sans-serif;
 }
 
-.contactoform {
-  justify-content: center;
-  text-align: justify;
+#formulario {
+  padding: 20px;
   font-family: "Inter", sans-serif;
 }
 
 .centroproductos {
-  margin-top: 50px;
+  margin-top: 0%;
   margin-bottom: 50px;
   padding: 20px 20px 20px 20px;
 }
@@ -91,8 +106,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.textoproductos {
+  display: flex;
+  justify-content: center;
+}
+
 .centrococina {
-  margin: 0;
+  margin: 0%;
 }
 
 .titulococina {
@@ -139,7 +159,173 @@ body {
   padding: 10px;
 }
 
+.centrodecks {
+  margin: 0%;
+}
+
+.titulodecks {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: antiquewhite;
+  margin: 0%;
+}
+
+.decks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.decks-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decks-item {
+  position: relative;
+}
+
+.decks-item:nth-child(1) {
+  grid-row-start: span 2;
+}
+
+.decks-item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.decks-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  padding: 10decks;
+}
+
+.centroplacard {
+  margin: 0;
+}
+
+.tituloplacard {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: antiquewhite;
+  margin: 0%;
+}
+
+.placard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.placard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placard-item {
+  position: relative;
+}
+
+.placard-item:nth-child(1) {
+  grid-row-start: span 2;
+}
+
+.placard-item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.placard-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.centrovanitory {
+  margin: 0%;
+}
+
+.titulovanitory {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: antiquewhite;
+  margin: 0%;
+}
+
+.vanitory-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.vanitory-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vanitory-item {
+  position: relative;
+}
+
+.vanitory-item:nth-child(1) {
+  grid-row-start: span 2;
+}
+
+.vanitory-item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.vanitory-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.textopromociones {
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 200px;
+  height: 100px;
+  border: solid 1px black;
+  background-image: url("../imagenes/cybermonday.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 576px) {
+  .texto {
+    max-width: 100%;
+    margin: 0%;
+    text-align: center;
+  }
   .parrafocentrado {
     margin-left: 0%;
     margin-right: 0%;
@@ -155,6 +341,45 @@ body {
     grid-row-start: 1;
   }
   .cocina-item:nth-child(5) {
+    grid-row-start: 2;
+  }
+  .vanitory-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+    grid-gap: 5px;
+  }
+  .vanitory-item:nth-child(1) {
+    grid-row-start: 1;
+  }
+  .vanitory-item:nth-child(5) {
+    grid-row-start: 2;
+  }
+  .placard-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+    grid-gap: 5px;
+  }
+  .placard-item:nth-child(1) {
+    grid-row-start: 1;
+  }
+  .placard-item:nth-child(5) {
+    grid-row-start: 2;
+  }
+  .decks-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+    grid-gap: 5px;
+  }
+  .decks-item:nth-child(1) {
+    grid-row-start: 1;
+  }
+  .decks-item:nth-child(5) {
     grid-row-start: 2;
   }
 }

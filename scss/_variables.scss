@@ -1,0 +1,30 @@
+$promocion: cybermonday;
+
+.badge{
+    
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 200px;
+    height: 100px;
+    border: solid 1px black;
+
+    @if $promocion == hotsale {
+        background-image: url('../imagenes/hotsale.png') ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+       
+        
+    }
+    @else if $promocion == cybermonday {
+        background-image:url('../imagenes/cybermonday.png') ;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        
+    }
+    @else {
+        display: none;
+    }
+}
