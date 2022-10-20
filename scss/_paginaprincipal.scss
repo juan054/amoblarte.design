@@ -9,14 +9,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top:50px ;
-    margin-bottom: 100px;
+    margin-top:0% ;
+    margin-bottom: 50px;
     font-family: 'Inter', sans-serif;
     background-color: aliceblue;
     .texto{
         display: flex;
+        max-width: 100%;
+        text-align: center;
         justify-content: center;
-        background-color: antiquewhite;
+        background-color: #D8D8D8;
         font-family: 'Inter', sans-serif;
         
     }
@@ -33,7 +35,7 @@
 .migajas{
     display: flex;
     justify-content: center;
-    background-color:antiquewhite ;
+    background-color:#D8D8D8 ;
     margin: 0%;
 }
 ol{
