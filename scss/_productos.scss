@@ -1,16 +1,64 @@
-.centroproductos{
-    margin-top:0%;
-    margin-bottom: 50px;
-    padding: 0px 20px 20px 20px;
-    .linkproductos{
-        text-decoration: none;
+
+
+.tituloproductos{
+    background-color: rgb(255, 236, 236);
+    font-family:'Inter', sans-serif ;
+}
+.reforma{
+    text-decoration: none;
+    color: black;
+   
+    :hover{
         color: black;
-        font-family:'Inter', sans-serif ;
-    
+        text-decoration: none;
+        
     }
-    .textoproductos{
-        margin-top: 0%;
-        display: flex;
-        justify-content: center;
+    .texto{
+        font-family:'Inter', sans-serif ;
+        :hover{
+            background-color: black;
+            
+        }
+        
+        btn{
+           text-decoration: none;
+        }
+        
     }
 }
+.placarddecks{
+    padding: 25px;
+    font-family:'Inter', sans-serif ;
+}
+.casabaño{
+    max-width: 100%;
+    padding: 25px;
+    .cuartobaño{
+        border: 2px solid rgb(255, 233, 233);
+    }
+
+    .titulobaño{
+        text-align: center;
+        font-family:'Inter', sans-serif ;
+        text-decoration: none;
+        color:black;
+        
+    }
+    .baño{
+        max-width: 100%;
+     }
+
+
+}
+.vinculobaño{
+    text-decoration: none;
+    color: black;
+    
+}
+.vinculo{
+    text-decoration: none;
+    color: black;
+
+}
+
+

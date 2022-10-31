@@ -15,36 +15,55 @@
 </head>
 <body>
   <header><!--encabezado-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-      <div class="container">
-        
-       
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div  class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="./index7productos.html">productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index2contacto.html">contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./index.html" >home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index8promociones.html">promociones</a>
-            </li>
-          </ul>
+    <section class="barranavegacion">
+      <nav class="navbar   navbar-light">
+        <div class="container-fluid  justify-content-around">
+          <a class="navbar-brand" href="#"><img class="logito" src="./imagenes/amoblarte.jpg" width="407px" height="100px" alt="logito"></a>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-expand-sm " id="collapsibleNavbar">
+                  <ul class="navbar-nav justify-content-center bg-light">
+                    <li class="nav-item">
+                      <a class="nav-link " href="./index.html" >Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+                      <ul class="dropdown-menu   ">
+                        <li>
+                          <a class="dropdown-item p-1" href="./index3cocina.html">Cocina</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index4placard.html">Placard</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index5decks.html">Decks</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index6vanitory.html">Vanitory</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index8promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index2contacto.html">Contacto</a>
+                    </li>
+                    
+                    
+                  </ul>
+            </div>
+          
         </div>
-      </div>
-    </nav>
+        
+      </nav>  
+    </section>
     
-      <div class="encabezado">
+     <!-- <div class="encabezado">
         <img id="fotologo" src="./imagenes/logofinal.png" class="img-fluid" alt="logo">
       </div>
+      -->
   
     
   </header> 
@@ -62,39 +81,50 @@
   <h1 class="titulococina">cocinas</h1>
     
       
-
-  <div class="cocina-container">
-    <div data-aos="fade-down-right" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.florida.jpg" alt="cocina">
-      <h2 class="cocina-title">Florida</h2>
-      </div>
-    <div data-aos="fade-down-left" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.juan.b.justo.jpg" alt="cocina">
-      <h2 class="cocina-title"> Juan b. Justo</h2>
-    </div>
-    <div data-aos="fade-up" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.las.heras.jpg" alt="cocina">
-      <h2 class="cocina-title"> Las Heras</h2>
-    </div>
-    <div data-aos="fade-up" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.coronel.diaz.jpg" alt="cocina">
-      <h2 class="cocina-title">Coronel Diaz</h2>
-    </div>
-    <div data-aos="fade-up" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.florida.dos.jpg" alt="cocina">
-      <h2 class="cocina-title">Florida</h2>
-    </div>
-    <div data-aos="fade-up" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.florida.tres.jpg" alt="cocina">
-      <h2 class="cocina-title">Florida</h2>
-    </div>
-    <div data-aos="fade-up" class="cocina-item">
-      <img class="cocina-img" src="./imagenes/img.carpinteria/cocina.juan.b.justo.dos.jpg" alt="cocina">
-      <h2 class="cocina-title">Juan b. Justo</h2>
-    </div>
+<section>
   
-</section>
+ <div class="galery-container">
+      <div  class="florida galery-item">
+        <img src="./imagenes/img.carpinteria/cocina.florida.jpg" class="galery-img" alt="">
+        <h2 class="subtitulo text-center ">Florida</h2>
+      </div>
+      <div class="floridauno galery-item">
+        <img src="./imagenes/img.carpinteria/cocina.florida.dos.jpg" class="galery-img" alt="">
+      </div>
+      <div class="floridados galery-item">
+        <img src="./imagenes/img.carpinteria/cocina.florida.tres.jpg" class="galery-img" alt="">
+      </div>
+      <div class="floridatres galery-item">
+        <p class="textococina galery-img">Trabajo realizado, comenzando con la torre de la cocina, bajos y altos mesada ,marcos ,bibilioteca y vajillero. Personaliza con opciones de diseño flexible. Relaciona de manera versátil ambientes como la cocina, living y espacios de trabajo o descanso. Esto se logra con un diseño accesible a través de formas simples, estanterías para objetos o libros, enseres domésticos, vajilla y otros.</p>
+      </div>
+      <div class="juan galery-item">
+        <img class="galery-img" src="./imagenes/img.carpinteria/cocina.juan.b.justo.dos.jpg" alt="juan b justo">
+        <h2 class="subtitulo text-center"> Juan B Justo</h2>
+      </div>
+      <div class="justo galery-item">
+        <img class="galery-img" src="./imagenes/img.carpinteria/cocina.juan.b.justo.jpg" alt="juan b justo">
+      </div>
+      <div class="bautista galery-item">
+        <p class="textococina galery-img">Esta línea permite personalizar cada cocina con aire joven ya que dispone de novedosos herrajes, variedad de colores y texturas, adaptándose a todas las posibilidades.</p>
+      </div>
+      <div class="las galery-item">
+        <h2 class="subtitulo text-center">Las Heras</h2>
+        <img class="galery-img" src="./imagenes/img.carpinteria/cocina.las.heras.jpg" alt="Las Heras">
+      </div>
+      <div class="heras galery-item">
+        <p class="textococina galery-img">Esta línea permite personalizar cada cocina con aire joven ya que dispone de novedosos herrajes, variedad de colores y texturas, adaptándose a todas las posibilidades.</p>
+      </div>
+      <div class="diaz galery-item">
+        <p class="textococina galery-img">Esta línea permite personalizar cada cocina con aire joven ya que dispone de novedosos herrajes, variedad de colores y texturas, adaptándose a todas las posibilidades.</p>
+      </div>
+      <div class="coronel galery-item">
+        <h2 class="subtitulo text-center"> Coronel Diaz</h2>
+        <img class="galery-img" src="./imagenes/img.carpinteria/cocina.coronel.diaz.jpg" alt="coronel diaz">
+      </div>
+      
+ </div>
 
+</section>
 
 
 
@@ -108,9 +138,7 @@
 
       </div>
 
-      <div id="pielogo" class="col-4 col-xl-3">
-          <img class="logito" src="./imagenes/logocompleto.png" width="50px" height="50px" alt="logito">
-      </div>
+      
 
       <div id="instagram" class="col-4 col-xl-3">
           <a href="https://instagram.com/amoblarte.design?igshid=NmNmNjAwNzg= " target="_blank">

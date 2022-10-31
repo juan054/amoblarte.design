@@ -18,111 +18,149 @@
 
 </head>
 <body>
+  <!--encabezado-->
   <header>
-    <nav id="barra" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        
-       
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="./index7productos.html">productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index2contacto.html">contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./index.html" >home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index8promociones.html">promociones</a>
-            </li>
-          </ul>
+    <section class="barranavegacion">
+      <nav class="navbar   navbar-light">
+        <div class="container-fluid  justify-content-around">
+          <a class="navbar-brand" href="#"><img class="logito" src="./imagenes/amoblarte.jpg" width="407px" height="100px" alt="logito"></a>
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-expand-sm " id="collapsibleNavbar">
+                  <ul class="navbar-nav justify-content-center bg-light">
+                    <li class="nav-item">
+                      <a class="nav-link " href="./index.html" >Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+                      <ul class="dropdown-menu   ">
+                        <li>
+                          <a class="dropdown-item p-1" href="./index3cocina.html">Cocina</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index4placard.html">Placard</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index5decks.html">Decks</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item p-1" href="./index6vanitory.html">Vanitory</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index8promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index2contacto.html">Contacto</a>
+                    </li>
+                    
+                    
+                  </ul>
+            </div>
+          
         </div>
-      </div>
-    </nav>
+        
+      </nav>  
+    </section>
     
-    <div class="encabezado">
-      <img id="fotologo" src="./imagenes/logofinal.png" class="img-fluid" alt="logo">
-    </div>
-  
+   
+  <h1 class="tituloproductos col-12 text-center">Productos</h1>
     
   </header>  
-
-<section class="migajas">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb m-0">
-      <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="./index2contacto.html">contacto</a></li>
-      <li class="breadcrumb-item active" aria-current="page">productos</li>
-    </ol>
-  </nav>
-</section>
-  
-      <section class="centroproductos">
-        <h1 class="textoproductos">productos</h1>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <a class="linkproductos" href="./index3cocina.html">
-          <div class="col">
-            <div class="card">
-              <img src="./imagenes/cocinaproductos.png" class="card-img-top" alt="cocina">
-              <div class="card-body">
-                <h5 class="card-title">cocina</h5>
-                
+<!--cuerpo de pagina-->
+<main>
+  <section>
+      <div class="card mb-3" >
+        <a class="reforma" href="./index3cocina.html">
+        <div class="row g-0">
+          
+          <div class="col-md-4">
+            <img src="./imagenes/cocinaproductos.png" class="cocinaproductos img-fluid " alt="cocina">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center bg-light">Cocinas</h5>
+              <p class="texto card-text">Un concepto nacido de las últimas tendencias europeas del diseño. Una gama de productos audaz, innovadora y vanguardista. De imagen pura y robusta, con fuerte geometría de formas. La tecnología, con los últimos adelantos en sistemas, dispositivos y prestaciones, dan el marco a esta nueva línea, que nace creando todo un espacio de exclusividad y buen gusto.</p>
+              <div class="btn d-grid ">
+                <button type="button" class="btn btn-link justify-content-center">Ver mas</button>
               </div>
+              
+              
             </div>
           </div>
-          </a>
-          <a class="linkproductos" href="./index4placard.html">
-          <div class="col">
-            <div class="card">
-              <img src="./imagenes/placardproductos.png" class="card-img-top" alt="placard">
-              <div class="card-body">
-                <h5 class="card-title">placard</h5>
-                
+        </div>
+      </a>
+    </section>
+    <section class="placarddecks">
+    <div  class=" card-group bg-transparent">
+        <div class =" vinculobaño card">
+          <a class="vinculo" href="./index4placard.html">
+          <img src="./imagenes/placardproductos.png" class="card-img-top" alt="placard">
+          <div class="card-body">
+            <h5 class="card-title text-center bg-light">Placard</h5>
+            <p class="vinculo card-text">Los placares y vestidores deben estar diseñados de acuerdo al espacio disponible donde se conjugue la comodidad y la funcionalidad. Contamos con la experiencia para asesorarte en los materiales y la distribución de los mismos.
+            Muebles de autor, espacios únicos.
+              
+              </p>
+              <div class="btn d-grid ">
+                <button type="button" class="btn btn-link justify-content-center">Ver mas</button>
               </div>
-            </div>
           </div>
-          </a>
-          <a class="linkproductos" href="./index5decks.html">
-          <div class="col">
-            <div class="card">
-              <img src="./imagenes/decksproductos.png" class="card-img-top" alt="decks">
-              <div class="card-body">
-                <h5 class="card-title">decks</h5>
-                
-              </div>
+        </a>
+        </div>
+        <div class="vinculobaño card">
+          <a class="vinculo" href="./index5decks.html">
+          <img src="./imagenes/decksproductos.png" class="card-img-top" alt="decks">
+          <div class="card-body">
+            <h5 class="card-title text-center bg-light">Decks</h5>
+            <p class="vinculo card-text">Brindamos el servicio de instalacion de Decks realizando estructuras con tubos de aluminio que no sufren deterioro con el paso del tiempo y tablas para decks con sistema clip.</p>
+            <div class="btn d-grid ">
+              <button type="button" class="btn btn-link justify-content-center">Ver mas</button>
             </div>
-          </div>
-          </a>
-          <a class="linkproductos" href="./index6vanitory.html">
-          <div class="col">
-            <div class="card">
-              <img src="./imagenes/vanitoryproductos.png" class="card-img-top" alt="vanitory">
-              <div class="card-body">
-                <h5 class="card-title">vanitory</h5>
-                
-              </div>
             </div>
-          </div>
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="casabaño">
+    <div class="cuartobaño row">
+      <div class="textobaño col-12 col-md-6 col-xl-7">
+        <a class="vinculo" href="./index6vanitory.html">
+        <h5 class="titulobaño card-title text-center bg-light">Vanitory</h5>
+        <p class="vinculo"> expertos en el mundo del baño, de calidad en  sus productos y acabados  y todos juntos hemos realizado para usted, una selección de los productos más especiales para que  encuentre aquí los complementos y mobiliario que le permitan vivir su baño de una forma especial, a unos precios reducidos.</p>
+        <div class="btn d-grid ">
+          <button type="button" class="btn btn-link justify-content-center">Ver mas</button>
+        </div>
+      </a>
+      </div>
+      <div class="vinculobaño col-12 col-md-6 col-xl-5 text-center">
+        <a class="vinculo" href="./index6vanitory.html">
+        <img class="baño" src="./imagenes/vanitoryproductos.png" alt="">
+      </a>
+      </div>
+      
+    </div>
+  </section>
+    </main>
+
+
+
+      <section class="migajas">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="./index2contacto.html">contacto</a></li>
+            <li class="breadcrumb-item active" aria-current="page">productos</li>
+          </ol>
+        </nav>
       </section>
 
 
 
-
-
-
-  
-
-
-
-
+<!--pie de pagina-->
 
   <footer>
 
@@ -133,9 +171,7 @@
   
         </div>
   
-        <div id="pielogo" class="col-4 col-xl-3">
-            <img class="logito" src="./imagenes/logocompleto.png" width="50px" height="50px" alt="logito">
-        </div>
+        
   
         <div id="instagram" class="col-4 col-xl-3">
             <a href="https://instagram.com/amoblarte.design?igshid=NmNmNjAwNzg= " target="_blank">
