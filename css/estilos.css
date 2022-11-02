@@ -488,6 +488,11 @@ ol {
   object-fit: cover;
 }
 
+.descuentos {
+  width: 33%;
+  display: flex;
+}
+
 .badge {
   position: absolute;
   top: 0%;
