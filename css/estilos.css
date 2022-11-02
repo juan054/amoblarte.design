@@ -237,7 +237,7 @@ ol {
   position: absolute;
   bottom: 0;
   color: white;
-  background: #333;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
   width: 100%;
   margin: 0%;
 }
@@ -254,6 +254,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  font-family: "Inter", sans-serif;
 }
 
 .centrodecks {
@@ -265,36 +266,61 @@ ol {
   background-color: antiquewhite;
   margin: 0%;
 }
-.centrodecks .decks-container {
+
+.decks-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 250px;
   padding: 20px;
   grid-gap: 10px;
   font-family: "Inter", sans-serif;
 }
-.centrodecks .decks-container .decks-img {
+
+.uno {
+  grid-column-start: span 3;
+}
+
+.tres {
+  grid-row-start: span 2;
+}
+
+.cinco {
+  grid-row-start: span 2;
+}
+
+.seis {
+  grid-row-end: span 2;
+}
+
+.ocho {
+  grid-column-start: span 3;
+}
+
+.decks-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  font-family: "Inter", sans-serif;
 }
-.centrodecks .decks-container .decks-item {
+
+.decks-item {
   position: relative;
 }
-.centrodecks .decks-container .decks-item:nth-child(1) {
-  grid-row-start: span 2;
-}
-.centrodecks .decks-container .decks-item:nth-child(5) {
-  grid-row-start: span 2;
-}
-.centrodecks .decks-container .decks-title {
+
+.decks-title {
   position: absolute;
   bottom: 0;
   color: white;
   background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
   width: 100%;
   margin: 0;
-  padding: 10decks;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
 }
 
 .centroplacard {
@@ -306,29 +332,25 @@ ol {
   background-color: antiquewhite;
   margin: 0%;
 }
-.centroplacard .placard-container {
+
+.placard-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 250px;
   padding: 20px;
   grid-gap: 10px;
-  font-family: "Inter", sans-serif;
 }
-.centroplacard .placard-container .placard-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.centroplacard .placard-container .placard-item {
+
+.placard-item {
   position: relative;
 }
-.centroplacard .placard-container .placard-item:nth-child(1) {
-  grid-row-start: span 2;
-}
-.centroplacard .placard-container .placard-item:nth-child(5) {
-  grid-row-start: span 2;
-}
-.centroplacard .placard-container .placard-title {
+
+.placard-title {
   position: absolute;
   bottom: 0;
   color: white;
@@ -336,6 +358,44 @@ ol {
   width: 100%;
   margin: 0;
   padding: 10px;
+}
+
+.vicente {
+  grid-column-start: span 2;
+}
+
+.sanlu {
+  grid-row-start: span 1;
+}
+
+.santos {
+  grid-row-end: span 2;
+  grid-column-end: span 2;
+}
+
+.soho {
+  grid-column-end: span 2;
+}
+
+.placard-item {
+  position: relative;
+}
+
+.placard-title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.placard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: "Inter", sans-serif;
 }
 
 .centrovanitory {
@@ -347,29 +407,54 @@ ol {
   background-color: antiquewhite;
   margin: 0%;
 }
-.centrovanitory .vanitory-container {
+
+.vanitory-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 250px;
   padding: 20px;
   grid-gap: 10px;
   font-family: "Inter", sans-serif;
 }
-.centrovanitory .vanitory-container .vanitory-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.juanuno {
+  grid-column-start: span 3;
 }
-.centrovanitory .vanitory-container .vanitory-item {
+
+.juandos {
+  grid-column-end: span 2;
+}
+
+.diaz {
+  grid-column-end: span 2;
+}
+
+.flouno {
+  grid-column-start: span 3;
+}
+
+.flodos {
+  grid-column-start: span 2;
+}
+
+.flotres {
+  grid-row-end: span 2;
+}
+
+.flocuatro {
+  grid-column-start: span 2;
+}
+
+.vanitory-item {
   position: relative;
 }
-.centrovanitory .vanitory-container .vanitory-item:nth-child(1) {
-  grid-row-start: span 2;
-}
-.centrovanitory .vanitory-container .vanitory-item:nth-child(5) {
-  grid-row-start: span 2;
-}
-.centrovanitory .vanitory-container .vanitory-title {
+
+.vanitory-title {
   position: absolute;
   bottom: 0;
   color: white;
@@ -377,11 +462,30 @@ ol {
   width: 100%;
   margin: 0;
   padding: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.vanitory-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: "Inter", sans-serif;
 }
 
 .textopromociones {
   display: flex;
   justify-content: center;
+}
+
+.calesita {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  max-height: 350px;
+}
+
+.pics {
+  object-fit: cover;
 }
 
 .badge {
@@ -428,6 +532,85 @@ ol {
   .diaz {
     grid-column-start: span 1;
   }
+  .placard-container {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .vicente {
+    grid-column-start: span 1;
+  }
+  .santos {
+    grid-column-start: span 1;
+    grid-row-end: span 1;
+  }
+  .palermo {
+    grid-column-start: span 2;
+  }
+  .soho {
+    grid-column-start: span 2;
+  }
+  .once {
+    grid-column-start: span 1;
+  }
+  .decks-container {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .uno {
+    grid-column-start: span 2;
+  }
+  .dos {
+    grid-column-start: span 2;
+  }
+  .tres {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+  }
+  .cuatro {
+    grid-column-start: span 2;
+  }
+  .cinco {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+  }
+  .seis {
+    grid-column-start: span 2;
+    grid-row-end: span 1;
+  }
+  .siete {
+    grid-column-start: span 2;
+  }
+  .ocho {
+    grid-column-start: span 2;
+  }
+  .vanitory-container {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .juanuno {
+    grid-column-start: span 2;
+  }
+  .juandos {
+    grid-column-end: span 1;
+  }
+  .diaz {
+    grid-column-end: span 1;
+  }
+  .flouno {
+    grid-column-start: span 2;
+  }
+  .flodos {
+    grid-column-start: span 2;
+  }
+  .flotres {
+    grid-row-end: span 1;
+  }
+  .flocuatro {
+    grid-column-start: span 2;
+  }
 }
 @media screen and (max-width: 576px) {
   .texto {
@@ -450,6 +633,72 @@ ol {
   .juan {
     grid-column-start: span 1;
   }
+  .placard-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .palermo {
+    grid-column-start: span 1;
+  }
+  .soho {
+    grid-column-start: span 1;
+  }
+  .decks-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .uno {
+    grid-column-start: span 1;
+  }
+  .dos {
+    grid-column-start: span 1;
+  }
+  .tres {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  .cuatro {
+    grid-column-start: span 1;
+  }
+  .cinco {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  .seis {
+    grid-column-start: span 1;
+    grid-row-end: span 1;
+  }
+  .siete {
+    grid-column-start: span 1;
+  }
+  .ocho {
+    grid-column-start: span 1;
+  }
+  .vanitory-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .juanuno {
+    grid-column-start: span 1;
+  }
+  .juandos {
+    grid-column-end: span 1;
+  }
+  .diaz {
+    grid-column-end: span 1;
+  }
+  .flouno {
+    grid-column-start: span 1;
+  }
+  .flodos {
+    grid-column-start: span 1;
+  }
+  .flotres {
+    grid-row-end: span 1;
+  }
+  .flocuatro {
+    grid-column-start: span 1;
+  }
 }
 @media screen and (max-width: 480px) {
   .texto {
@@ -459,6 +708,79 @@ ol {
   .parrafocentrado {
     margin-left: 0% !important;
     margin-right: 0% !important;
+  }
+  .galery-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .juan {
+    grid-column-start: span 1;
+  }
+  .placard-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .palermo {
+    grid-column-start: span 1;
+  }
+  .soho {
+    grid-column-start: span 1;
+  }
+  .decks-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .uno {
+    grid-column-start: span 1;
+  }
+  .dos {
+    grid-column-start: span 1;
+  }
+  .tres {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  .cuatro {
+    grid-column-start: span 1;
+  }
+  .cinco {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  .seis {
+    grid-column-start: span 1;
+    grid-row-end: span 1;
+  }
+  .siete {
+    grid-column-start: span 1;
+  }
+  .ocho {
+    grid-column-start: span 1;
+  }
+  .vanitory-container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .juanuno {
+    grid-column-start: span 1;
+  }
+  .juandos {
+    grid-column-end: span 1;
+  }
+  .diaz {
+    grid-column-end: span 1;
+  }
+  .flouno {
+    grid-column-start: span 1;
+  }
+  .flodos {
+    grid-column-start: span 1;
+  }
+  .flotres {
+    grid-row-end: span 1;
+  }
+  .flocuatro {
+    grid-column-start: span 1;
   }
 }
 .logito {

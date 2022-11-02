@@ -30,9 +30,90 @@
     .diaz{
         grid-column-start: span 1;
     }
-    
-    
+    .placard-container{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        }
+        .vicente{
+            grid-column-start: span 1;
+        }
+    .santos{
+        grid-column-start: span 1;
+        grid-row-end: span 1;
+        
+    }
+    .palermo{
+        grid-column-start: span 2;
+    }
+    .soho{
+        grid-column-start: span 2;
+    }
+    .once{
+        grid-column-start: span 1;
+    }
+    .decks-container{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+    }
+    .uno{
+        grid-column-start: span 2;
+
+    }
+    .dos{
+        grid-column-start: span 2;
+    }
+    .tres{
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }
+    .cuatro{
+        grid-column-start: span 2;
+    }
+    .cinco{
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }   
+    .seis{
+        grid-column-start: span 2;
+        grid-row-end: span 1;
+    }
+    .siete{
+        grid-column-start: span 2;
+    }
+    .ocho{
+        grid-column-start: span 2;
+    }
+    .vanitory-container{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        }
+        .juanuno{
+            grid-column-start: span 2;
+        }
+        .juandos{
+            grid-column-end: span 1;
+        }
+        
+        .diaz{
+            grid-column-end: span 1;
+        }
+        .flouno{
+            grid-column-start: span 2;
+        }
+        .flodos{
+            grid-column-start: span 2;
+        }
+        .flotres{
+            grid-row-end: span 1;
+        }
+        .flocuatro{
+            grid-column-start: span 2;
+        }
 }
+
 
 @media screen and (max-width:576px){
 
@@ -58,8 +139,75 @@
         grid-column-start: span 1;
        
     }
-    
-    
+    .placard-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .palermo{
+        grid-column-start: span 1;
+    }
+    .soho{
+        grid-column-start: span 1;
+    }
+    .decks-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .uno{
+        grid-column-start: span 1;
+
+    }
+    .dos{
+        grid-column-start: span 1;
+    }
+    .tres{
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    .cuatro{
+        grid-column-start: span 1;
+    }
+    .cinco{
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }   
+    .seis{
+        grid-column-start: span 1;
+        grid-row-end: span 1;
+    }
+    .siete{
+        grid-column-start: span 1;
+    }
+    .ocho{
+        grid-column-start: span 1;
+    }
+    .vanitory-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        }
+        .juanuno{
+            grid-column-start: span 1;
+        }
+        .juandos{
+            grid-column-end: span 1;
+        }
+        
+        .diaz{
+            grid-column-end: span 1;
+        }
+        .flouno{
+            grid-column-start: span 1;
+        }
+        .flodos{
+            grid-column-start: span 1;
+        }
+        .flotres{
+            grid-row-end: span 1;
+        }
+        .flocuatro{
+            grid-column-start: span 1;
+        }
 }
 
 @media screen and (max-width:480px){
@@ -73,7 +221,84 @@
         
     }
     
-    
+    .galery-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .juan{
+        grid-column-start: span 1;
+       
+    }
+    .placard-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .palermo{
+        grid-column-start: span 1;
+    }
+    .soho{
+        grid-column-start: span 1;
+    }
+    .decks-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .uno{
+        grid-column-start: span 1;
+
+    }
+    .dos{
+        grid-column-start: span 1;
+    }
+    .tres{
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    .cuatro{
+        grid-column-start: span 1;
+    }
+    .cinco{
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }   
+    .seis{
+        grid-column-start: span 1;
+        grid-row-end: span 1;
+    }
+    .siete{
+        grid-column-start: span 1;
+    }
+    .ocho{
+        grid-column-start: span 1;
+    }
+    .vanitory-container{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        }
+        .juanuno{
+            grid-column-start: span 1;
+        }
+        .juandos{
+            grid-column-end: span 1;
+        }
+        
+        .diaz{
+            grid-column-end: span 1;
+        }
+        .flouno{
+            grid-column-start: span 1;
+        }
+        .flodos{
+            grid-column-start: span 1;
+        }
+        .flotres{
+            grid-row-end: span 1;
+        }
+        .flocuatro{
+            grid-column-start: span 1;
+        }
     
 }
     
