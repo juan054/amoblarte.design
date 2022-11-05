@@ -186,7 +186,8 @@ ol {
 .titulococina {
   text-align: center;
   font-family: "Inter", sans-serif;
-  background-color: antiquewhite;
+  background-color: grey;
+  opacity: 0.6;
   margin: 0%;
 }
 
@@ -263,7 +264,8 @@ ol {
 .centrodecks .titulodecks {
   text-align: center;
   font-family: "Inter", sans-serif;
-  background-color: antiquewhite;
+  background-color: grey;
+  opacity: 0.6;
   margin: 0%;
 }
 
@@ -329,7 +331,9 @@ ol {
 .centroplacard .tituloplacard {
   text-align: center;
   font-family: "Inter", sans-serif;
-  background-color: antiquewhite;
+  color: black;
+  background-color: grey;
+  opacity: 0.6;
   margin: 0%;
 }
 
@@ -404,7 +408,8 @@ ol {
 .centrovanitory .titulovanitory {
   text-align: center;
   font-family: "Inter", sans-serif;
-  background-color: antiquewhite;
+  background-color: grey;
+  opacity: 0.6;
   margin: 0%;
 }
 
@@ -475,22 +480,26 @@ ol {
 .textopromociones {
   display: flex;
   justify-content: center;
-}
-
-.calesita {
-  width: 100%;
-  max-width: 100%;
-  height: 350px;
-  max-height: 350px;
-}
-
-.pics {
-  object-fit: cover;
+  background-color: grey;
+  opacity: 0.6;
+  margin-bottom: 0%;
+  padding: 10px;
 }
 
 .descuentos {
   width: 33%;
   display: flex;
+}
+
+.textopromo {
+  font-family: "Inter", sans-serif;
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.arreglo {
+  padding: 20px;
 }
 
 .badge {

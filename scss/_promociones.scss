@@ -1,19 +1,23 @@
 .textopromociones{
     display: flex;
     justify-content: center;
+    background-color: grey;
+    opacity: 0.6;
+    margin-bottom: 0%;
+    padding: 10px;
 }
-.calesita{
-    width: 100%;
-    max-width: 100%;
-    height: 350px;
-    max-height:350px ;
 
-}
-.pics{
-    
-    object-fit: cover;
-}
+
 .descuentos{
     width: 33%;
     display: flex;
+}
+.textopromo{
+    font-family:'Inter', sans-serif ; 
+    color:black;
+    justify-content: center;
+    text-align: center;
+}
+.arreglo{
+    padding: 20px;
 }
