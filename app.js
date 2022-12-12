@@ -34,7 +34,7 @@ const conIva = todosProductos.map((el) => {
 })
 
 
-
+function carrito(){
 
 let producto = parseInt (prompt(`seleccione el producto:
         1: vanitory
@@ -65,9 +65,11 @@ let producto = parseInt (prompt(`seleccione el producto:
             alert("producto incorrecto")
             break;}
     }
+
 console.log("precio con iva de todos los productos")  
 console.log(  conIva)
-
+}
+carrito()
 
 
     
