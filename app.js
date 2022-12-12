@@ -1,115 +1,81 @@
 alert ("Bienvenidos a Amoblarte.design");
 
-solicitarNombre ();
-function solicitarNombre(){
-let nombre = prompt("ingrese su nombre")
-let apellido = prompt("ingrese su apellido")
+let nombre = prompt("ingrese su nombre");
+let apellido = prompt("ingrese su apellido");
+let nombreCompleto = alert("bienvenido " + nombre +" "+ apellido + " a amoblarte design");
 
-let nombrecompleto = alert ("bienvenido " + nombre + " " + apellido);
-seleccionarArea();
 
-}
 
-function seleccionarArea(){
-        let area = parseInt (prompt(`seleccione su area para ingresar:
-        1: ventas
-        2: logistica
-        3: marketing 
-        4: infraestructura
-        5: sistemas
-        6: limpieza
-        7: reposicion
-        8: etiquetado 
-        9: embalaje
-        10: facturacion
+const todosProductos = [
+    {nombre: 'vanitory simple', precio: 15000},
+    {nombre: 'vanitory de dos puertas', precio: 22000},
+    {nombre: 'vanitory flotante', precio: 22000},
+    {nombre: 'mesa de luz simple', precio: 16000},
+    {nombre: 'mesa de luz con cajonera', precio: 25000},
+    {nombre: 'mesa de luz con desayunador', precio: 35000},
+    {nombre: 'escritorio simple', precio: 16000},
+    {nombre: 'escritorio flotante', precio: 26000},
+    {nombre: 'escritorio con cajon', precio: 34000},
+    {nombre: 'alacena simple', precio: 16000},
+    {nombre: 'alacena de pino', precio: 20000},
+    {nombre: 'alacena de mdf', precio: 38000},
+]
+const resultado = todosProductos.filter((el) => el.nombre.includes('vanitory'))
+const resultado1 = todosProductos.filter((el) => el.nombre.includes('mesa'))
+const resultado2 = todosProductos.filter((el) => el.nombre.includes('escritorio'))
+const resultado3 = todosProductos.filter((el) => el.nombre.includes('alacena'))
+
+const conIva = todosProductos.map((el) => {
+    return {
+        
+        nombre: el.nombre,
+        precio: el.precio * 1.5
+    }
+})
+
+
+
+
+let producto = parseInt (prompt(`seleccione el producto:
+        1: vanitory
+        2: mesa de luz
+        3: escritorio 
+        4: alacena
+       
         `));
-   
-        switch (area) {
+
+    switch(producto){
             case 1:{
-            alert("saque turno")
+            console.log("producto sin iva")     
+            console.log( resultado)
             break;}
             case 2:{
-            alert("saque turno")
+            console.log("producto sin iva")      
+            console.log(resultado1)
             break;}
             case 3:{
-            alert("saque turno")
+            console.log("producto sin iva")          
+            console.log(resultado2)
             break;}
             case 4:{
-            alert("saque turno")
+            console.log("producto sin iva")      
+            console.log(resultado3)
             break;}
-            case 5:{
-            alert("saque turno")
-            break;}
-            case 6:{
-            alert("saque turno")
-            break;}
-            case 7:{
-            alert("saque turno")
-            break;}
-            case 8:{
-            alert("saque turno")
-            break;}
-            case 9:{
-            alert("saque turno")
-            break;}
-            case 10:{
-            alert("saque turno")
-            break;}    
             default: {
-            alert("area incorrecta")
+            alert("producto incorrecto")
             break;}
-            
-                
-        }
-       
-    seleccioneTurno()
-
-    
-}
-
-function seleccioneTurno(){
-    
-    for (let i = 1; i <=10; i++){
-        let ingresarNombre = prompt("ingresar nombre") ;
-
-        alert ("turno n°" + i + "nombre "+ ingresarNombre);
-        if(i == 1){
-            break
-        }
-        if(i == 2){
-            break
-        }
-        if(i == 3){
-            break
-        }
-        if(i == 4){
-            break
-        }
-        if(i == 5){
-            break
-        }
-        if(i == 6){
-            break
-        }
-        if(i == 7){
-            break
-        }
-        if(i == 8){
-            break
-        }
-        if(i == 9){
-            break
-        }
-        if(i == 10){
-            break
-        }
     }
-   
+console.log("precio con iva de todos los productos")  
+console.log(  conIva)
+
+
+
     
-    
+ 
 
 
 
-}
+
+
 
 
