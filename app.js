@@ -32,12 +32,17 @@ function cuadroCarrito() {
     const row = document.createElement("p");   
     row.innerHTML=`
     
-    <div class="container">
-    <h5>${articulo.titulo}</h5>
-    <p>${articulo.texto}</p>
-    <button class="btn btn-danger">Eliminar</button>
+
+    <div class="card border-primary mb-3" >
+    <div class="card-header">Header</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">${articulo.titulo}</h5>
+      <p class="card-text">${articulo.texto}</p>
+      <button type="button" class="btn btn-outline-danger" id=" ${ articulo.id } ">eliminar</button>
     </div>
-    
+
+
+   
     
     
     `; 
@@ -52,6 +57,14 @@ function ordenarIndex() {
   }
 
 
-
+  function eliminarArticulo(e) {
+    if (e.target.classList.contains("btn-outline-danger")) {
+      let productoID = e.target.getAttribute("id");
+      miCompra = miCompra.filter(
+        (articulo) => articulo.id !== articulo.id
+      );
+      cuadroCarrito();
+    }
+  };
 
 
