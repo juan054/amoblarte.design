@@ -38,7 +38,7 @@ function cuadroCarrito() {
     <div class="card-body text-primary">
       <h5 class="card-title">${articulo.titulo}</h5>
       <p class="card-text">${articulo.texto}</p>
-      <button type="button" class="btn btn-outline-danger" id=" ${ articulo.id } ">eliminar</button>
+      <button  class="btn btn-outline-danger" id=" ${ articulo.id } ">eliminar</button>
     </div>
 
 
@@ -58,12 +58,13 @@ function ordenarIndex() {
 
 
   function eliminarArticulo(e) {
-    if (e.target.classList.contains("btn-outline-danger")) {
+    if (e.target.classList.contains("btn btn-outline-danger")) {
       let productoID = e.target.getAttribute("id");
       miCompra = miCompra.filter(
         (articulo) => articulo.id !== articulo.id
       );
       cuadroCarrito();
+      
     }
   };
 
