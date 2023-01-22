@@ -22,6 +22,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const DOMbotonComprar = document.querySelector('#boton-comprar');
 const miLocalStorage = window.localStorage;
 /*funcion para agregar estos productos al html*/
 
@@ -47,8 +48,8 @@ function crearProductos () {
         esqueletoPrecio.textContent = `${divisa}${info.importe}`;
 
         const esqueletoBoton = document.createElement('button');
-        esqueletoBoton.classList.add('btn', 'btn-primary');
-        esqueletoBoton.textContent = '+';
+        esqueletoBoton.classList.add('btn', 'btn-outline-dark');
+        esqueletoBoton.textContent = 'Agregar';
         esqueletoBoton.setAttribute('marcador', info.id);
         esqueletoBoton.addEventListener('click', agregarProductoAlCarrito);
 
@@ -86,12 +87,12 @@ function productosDelCarrito() {
         }, 0);
         const esqueleto = document.createElement('li');
         esqueleto.classList.add('list-group-item', 'text-right', 'mx-2');
-        esqueleto.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].importe}${divisa}`;
+        esqueleto.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} -${divisa} ${miItem[0].importe}`;
         
         
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-        miBoton.textContent = 'X';
+        miBoton.textContent = 'Eliminar';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
         miBoton.addEventListener('click', borrarItemCarrito);
@@ -133,8 +134,20 @@ function vaciarCarrito() {
     productosDelCarrito();
     
     localStorage.clear();
-
+ alert("hola");
 }
+function comprarCarrito() {
+    
+carrito = [];
+productosDelCarrito();
+localStorage.clear();
+Swal.fire(
+    'Muchas gracias por su compra!',
+    'Le enviaremos la factura a su mail!',
+    'success'
+  )  
+};
+
 
 
 function guardarCarritoEnLocalStorage () {
@@ -150,6 +163,7 @@ function cargarCarritoDeLocalStorage () {
 
 
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+DOMbotonComprar.addEventListener('click', comprarCarrito);
 
 
 cargarCarritoDeLocalStorage();
