@@ -1,19 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-/*base de datos de los productos para no hacer un html tan extenso*/
 
-const productos = [
-{id:100, nombre:`estante con mensulas retro`, importe: 8000, imagen:`./imagenes/cocinaproductos.png`},
-{id:101, nombre:`mesa ratona escandinava`, importe: 45000, imagen:`./imagenes/cocinaproductos.png`},
-{id:102, nombre:`escritorio gammer`, importe: 60000, imagen:`./imagenes/cocinaproductos.png`},
-{id:103, nombre:`condimentero funcional`, importe: 17000, imagen:`./imagenes/cocinaproductos.png`},
-{id:104, nombre:`estante flotante exagonal`, importe: 8500 , imagen:`./imagenes/cocinaproductos.png`},
-{id:105, nombre:`huerta vertical para deck`, importe: 88000,  imagen:`./imagenes/cocinaproductos.png`},
-{id:106, nombre:`modulo con cajones accesorio de cocina `, importe: 29000, imagen:`./imagenes/cocinaproductos.png`},
-{id:107, nombre:`silla convencional`, importe: 35000, imagen:`./imagenes/cocinaproductos.png`},
-{id:108, nombre:`vinoteca (cava) para 6 botellas colgante`, importe: 27000, imagen:`./imagenes/cocinaproductos.png`},
-{id:109, nombre:`soporte para copas`, importe: 20000,  imagen:`./imagenes/cocinaproductos.png`},
-{id:110, nombre:`barril tipo cava 12 botellas `, importe: 48000, imagen:`./imagenes/cocinaproductos.png`}
-];
+let baseDatos = []
+fetch("./data.json")
+    .then(response => response.json())
+    .then(data =>{ 
+        baseDatos = data;
+
+        crearProductos(baseDatos);
+        }
+       
+    )
 
 
 let carrito = [];
@@ -24,11 +20,11 @@ const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonComprar = document.querySelector('#boton-comprar');
 const miLocalStorage = window.localStorage;
-/*funcion para agregar estos productos al html*/
 
 
-function crearProductos () {
-    productos.forEach((info) => {
+
+function crearProductos (baseDatos) {
+    baseDatos.forEach((info) => {
         const esqueleto = document.createElement('div');
         esqueleto.classList.add('card', 'col-sm-4');
 
@@ -78,8 +74,8 @@ function productosDelCarrito() {
     const carritoSinDuplicados = [...new Set(carrito)];
     
     carritoSinDuplicados.forEach((item)=>{
-        const miItem = productos.filter((itemProductos) => {
-            return itemProductos.id === parseInt(item);
+        const miItem = baseDatos.filter((itembaseDatos) => {
+            return itembaseDatos.id === parseInt(item);
         });
 
         const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -119,8 +115,8 @@ function borrarItemCarrito(e) {
 
 function calcularTotal() {
     return carrito.reduce((total, item) => {
-        const miItem = productos.filter((itemProductos) => {
-            return itemProductos.id === parseInt(item);
+        const miItem = baseDatos.filter((itembaseDatos) => {
+            return itembaseDatos.id === parseInt(item);
         });
        
         return total + miItem[0].importe;
@@ -167,16 +163,9 @@ DOMbotonComprar.addEventListener('click', comprarCarrito);
 
 
 cargarCarritoDeLocalStorage();
-crearProductos();
+   
 productosDelCarrito();
 });
-
-
-
-
-
-
-
 
 
 
